@@ -37,3 +37,18 @@
 
            return zipped
   }
+
+  function euclidean_distance_procedural(p, q) {
+
+           if(p.length != q.length) throw "Arrays need to have same length"
+
+           var sum = 0 
+
+           for(var i = 0; i < p.length; ++i) {
+
+               sum += Math.pow(p[i]-q[i], 2)
+
+           }  
+
+           return Math.sqrt( sum )
+  }
