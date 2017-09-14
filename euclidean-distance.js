@@ -1,5 +1,6 @@
   function euclidean_distance(p, q) {
 
+           //make sure both vectors are in the same dimension
            if(p.length != q.length) throw "Arrays need to have same length"
 
            var n = zip(p, q).map(function( a ){
@@ -40,6 +41,7 @@
 
   function euclidean_distance_procedural(p, q) {
 
+           //make sure both vectors are in the same dimension
            if(p.length != q.length) throw "Arrays need to have same length"
 
            var sum = 0 
