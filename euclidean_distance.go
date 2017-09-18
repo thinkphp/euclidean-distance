@@ -7,6 +7,13 @@ func euclidean_distance_procedural(a []int, b []int) float64 {
 
       var n, s int
 
+          if len(a) != len(b) {
+
+             fmt.Println("Be sure that both vectors have the same dimension!") 
+
+             return 0 
+          }
+
           n = len(a)
 
           s = 0
